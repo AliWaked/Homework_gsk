@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="prism.css" />
-    <title>Homework2</title>
+    <title><?='homework1'?></title>
     <style>
         * {
             padding: 0;
@@ -238,7 +238,7 @@
     </nav>
     <div class="menubar" id="menubar">
         <div class="links">
-            <a href="/homework1.php" class="active">Homework1</a>
+            <a href="/index.php" class="active">Homework1</a>
             <a href="/homework2.php">Homework2</a>
         </div>
     </div>
