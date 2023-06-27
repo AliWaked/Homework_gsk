@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="../Homeworks/assets/css/prism.css" />
+    <link rel="stylesheet" href="../Homeworks/assets/css/style.css">
+    <style>
+        ::selection {
+            color:#fff ;
+            /* background-color: green; */
+        }
+        nav {
+            background-color: #673AB7;
+        }
+        .menubar {
+            background-color: #673AB7;
+            opacity: 1;
+            /* box-shadow: -8px 6px 169px 3px #452f69; */
+        }
+        h1 {
+            font-size: 70px;
+        }
+        .home {
+            min-height: 110vh;
+            background-color: #673AB7;
+            position: relative;
+            z-index: -1;
+        }
+        .home svg {
+            position: absolute;
+            bottom: 0;
+            
+        }
+        .home .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            color: #fff;
+        }
+        .home .content .intro {
+            width: 42%;
+            text-align: center;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+        }
+        .home .image {
+            margin-right: 30px;
+        }
+        .home .image img{
+            width: 500px;
+        }
+        .about-my h2 {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
+            letter-spacing: 10px;
+            width: fit-content;
+            font-style: italic;
+            position: relative;
+            color: #666;
+        }
+        .about-my h2::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #683ab777;
+            bottom: -10px;
+            left: -5px;
+        }
+        .about-my .my-information {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            margin-top: 80px;
+            border-radius: 15px;
+            border: 2px solid #673AB7;
+            color: #673ab7bf;
+        }
+        .about-my .my-information div {
+            width: 1000px;
+            padding: 25px 15px;
+            border-collapse: collapse;
+            border-bottom: 2px solid #673AB7;
+        }
+        .about-my .my-information div:last-child {
+            border: none;
+        }
+        .about-my .my-information div span {
+            display: inline-block;
+            width: 20%;
+            color: #607d8b;
+        }
+       
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:1100px) and (min-width:992px) {
+            .home .image img{
+            width: 400px;
+        }
+        .about-my .my-information div{
+            width: 890px;
+        }
+
+        .about-my .my-information {
+            font-size: 27px;
+        }
+    }
+    @media screen and (max-width:992px) and (min-width:600px) {
+        .about-my {
+            padding-top: 60px;
+        }
+        .about-my .my-information div{
+            width: 580px;
+        }
+        .about-my h2 {
+            font-size: 35px;
+        }
+
+        .about-my .my-information {
+            font-size: 20px;
+        }
+            .home .image img{
+            width: 500px;
+        }
+        h1 {
+             font-size: 50px;
+        }
+        .home .image {
+            text-align: center;
+        }
+        .home .content {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+        .home .content .intro {
+            width: 90%;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .home svg {
+            display: none;   
+        }
+        .home {
+            min-height: 100vh;
+        }
+    }
+        @media screen and (max-width:600px) {
+            .about-my {
+            padding-top: 50px;
+        }
+        .about-my .my-information div{
+            width: 90%;
+        }
+        .about-my h2 {
+            font-size: 30px;
+        }
+
+        .about-my .my-information {
+            font-size: 18px;
+        }
+            h1 {
+                font-size: 24px;
+            }
+            .home .image img{
+            width: 350px;
+          
+        }
+        .home .image {
+            text-align: center;
+        }
+        .home .content {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+        .home .content .intro {
+            width: 90%;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .home svg {
+            display: none;   
+        }
+        .home {
+            min-height: 100vh;
+        }
+        }
+        .about-my {
+            background-color: #eee;
+            padding-bottom: 60px;
+        }
+        
+    </style>
+    <title>Homeworks</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="name">Ali Ibrahim Abu Waked</div>
+        <div class="menu">
+            <i class="fas fa-bars" id="menu"></i>
+        </div>
+    </nav>
+    <div class="menubar" id="menubar">
+        <div class="links">
+            <a href="/public/index.html" class="active">Home</a>
+            <a href="../Homeworks/views/homework1.html">Homework1</a>
+            <a href="../Homeworks/views/homework2.html">Homework2</a>
+        </div>
+    </div>
+    <div class="home">
+       <div class="content">
+        <div class="intro">
+            <h1>Welcome To My HomeWorks Website</h1>
+        </div>
+        <div class="image">
+            <img src="../Homeworks/assets/images/undraw_laravel_and_vue_-59-tp.svg" alt="">
+        </div>
+       </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#eee" fill-opacity="1" d="M0,128L24,128C48,128,96,128,144,149.3C192,171,240,213,288,202.7C336,192,384,128,432,133.3C480,139,528,213,576,218.7C624,224,672,160,720,154.7C768,149,816,203,864,202.7C912,203,960,149,1008,138.7C1056,128,1104,160,1152,186.7C1200,213,1248,235,1296,229.3C1344,224,1392,192,1416,176L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+          </svg>
+    </div>
+    <div class="about-my">
+        <h2>ABOUT MY</h2>
+        <div class="my-information">
+            <div class="full-name">
+                <span>Full Name:</span>
+                Ali Ibrahim Abu Waked
+            </div>
+            <div class="address">
+                <span>Address:</span>
+                Palestine Gaza
+            </div>
+            <div class="Major">
+                <span>Major:</span> 
+                Computer Systems Engineering
+            </div>
+            <div class="job">
+                <span>Job:</span>
+                Freelancer "Backend Developer Using laravel Framework"
+            </div>
+        </div>
+    </div>
+    <footer>
+        2023
+    </footer>
+</body>
+<script src="../Homeworks/assets/js/prism.js"></script>
+<script src="../Homeworks/assets/js/javascript.js"></script>
+<script>
+
+</script>
+
+</html>

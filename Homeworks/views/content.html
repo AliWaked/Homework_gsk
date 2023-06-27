@@ -1,0 +1,13 @@
+<p id="p">Hello my name is ali waked</p>
+<script>
+    let links = ['home','go','s'];
+    let link = document.getElementById('p');
+    for(let i =0;i< links.length; i++) {
+        if(i == 0) {
+            a = `<a href="homework2.html" class="active" style='color:red;'>${links[i]}</a>`;
+        }else
+        a = `<a href="homework2.html" class="active">${links[i]}</a>`;
+        link.innerHTML += a;
+        
+    }
+</script>

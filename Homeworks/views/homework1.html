@@ -5,228 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="prism.css" />
-    <title>homework1</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            outline: none;
-            text-decoration: none;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: blue;
-            padding: 20px 60px;
-            justify-content: space-between;
-            color: #fff;
-            font-size: 20px;
-        }
-
-        nav .name {
-            font-weight: bold;
-            cursor: default;
-            user-select: none;
-        }
-
-
-
-        nav .links a:hover {
-            color: red;
-        }
-
-        nav .menu i {
-            cursor: pointer;
-            transition: 0.5s;
-            font-size: 20px;
-        }
-
-        nav .menu i:hover {
-            opacity: 0.5;
-        }
-
-        .menubar {
-            min-height: 100vh;
-            position: absolute;
-            width: 25%;
-            background-color: blue;
-            right: -100%;
-            opacity: 0.5;
-            top: 65px;
-            transition: 0.5s;
-        }
-
-        .right {
-            right: 0;
-        }
-
-        .container {
-            width: 90%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .first-color-background {
-            padding: 80px 80px 50px;
-            background-color: #eee;
-        }
-
-        .second-color-background {
-            padding: 80px 80px 50px;
-            background-color: #ddd;
-        }
-
-        .answer-information span {
-            font-size: 20px;
-            color: #666;
-        }
-
-
-        .answer-information span.quation {
-            display: flex;
-        }
-
-        .answer-information span.quation p {
-            line-height: 1.6;
-            width: 85%;
-        }
-
-        .answer-information i {
-            font-weight: bold;
-            font-size: 25px;
-            margin-right: 20px;
-            color: #222;
-        }
-
-        .answer-information div {
-            margin-top: 20px;
-            margin-left: 150px;
-        }
-
-        .answer-information div p {
-            font-size: 20px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        .answer-information div ul {
-            margin-left: 50px;
-        }
-
-        .answer-information div ul li {
-            margin-top: 10px;
-            list-style: none;
-            position: relative;
-        }
-
-        .answer-information div ul li::after {
-            content: '';
-            position: absolute;
-            border: #0000ff96 10px solid;
-            top: 5px;
-            left: -30px;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-            border-top-color: transparent;
-        }
-
-        .answer-information div ul li i {
-            color: #673ab7bf;
-            font-size: 18px;
-            margin-left: 8px;
-        }
-
-        .show-code {
-            text-align: center;
-        }
-
-        button[type='button'] {
-            font-size: 18px;
-            margin-top: 10px;
-            background-color: transparent;
-            border-radius: 10px;
-            width: 180px;
-            height: 55px;
-            cursor: pointer;
-            color: #0000ff3b;
-            text-transform: capitalize;
-            border: 3px solid #0000ff3b;
-            transition: 0.5s;
-            font-weight: 500;
-        }
-
-        button[type='button']:hover {
-            border-color: #0000ff96;
-            color: #0000ff96;
-        }
-
-        .code {
-            text-align: center;
-        }
-
-        .code pre {
-            transition: 0.5s;
-            /* width: 800px; */
-            width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            /* padding: 0; */
-            padding: 0;
-
-        }
-
-        .hidden-code {
-            padding: 0;
-            height: 0px;
-        }
-
-        .display-code {
-            height: 300px;
-
-        }
-
-        .menubar .links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding-top: 30px;
-        }
-
-        .menubar .links a {
-            display: inline-block;
-            padding-left: 40px;
-            margin-right: 15px;
-            color: #fff;
-            transition: 0.5s;
-            font-size: 20px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #fff;
-            transition: 0.5s;
-            user-select: none;
-        }
-
-        .menubar .links a.active {
-            /* cursor: default; */
-            pointer-events: none;
-            color: #03A9F4;
-            border-bottom-color: #03A9F4;
-        }
-
-        .menubar .links a:hover {
-            color: #03A9F4;
-            border-bottom-color: #03A9F4;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/prism.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Homework1</title>
 </head>
 
 <body>
@@ -237,12 +18,12 @@
         </div>
     </nav>
     <div class="menubar" id="menubar">
-        <div class="links">
-            <a href="/Homework_gsk/index.html" class="active">Homework1</a>
-            <a href="/Homework_gsk/homework2.html">Homework2</a>
+        <div class="links" id="links">
+            <a href="../../public/index.html">Home</a>
+            <!-- <a href="homework1.html" class="active">Homework1</a> -->
+            <!-- <a href="homework2.html">Homework2</a> -->
         </div>
     </div>
-
     <div class="answer-information first-color-background   ">
         <span class="quation"><i>#Quation 1</i>
             <p>Write a PHP program to check whether the first two characters and last two characters of a given string are same</p>
@@ -568,25 +349,9 @@
     </div>
 
 </body>
-<script src="prism.js"></script>
-<script>
-    document.getElementById('menu').onclick = function() {
-        document.getElementById('menubar').classList.toggle('right')
-    }
-    buttons = document.querySelectorAll('button[type="button"]');
-    numberOfButton = buttons.length;
-    console.log(numberOfButton);
-    for (let i = 1; i <= numberOfButton; i++) {
-        document.getElementsByClassName(`button-show-code-${i}`)[0].onclick = function() {
-            document.getElementsByClassName(`pre-${i}`)[0].classList.toggle('display-code')
-            document.getElementsByClassName(`pre-${i}`)[0].classList.toggle('hidden-code')
-            if (document.getElementsByClassName(`pre-${i}`)[0].classList.contains('display-code')) {
-                document.getElementsByClassName(`button-show-code-${i}`)[0].innerHTML = 'hidden code';
-            } else {
-                document.getElementsByClassName(`button-show-code-${i}`)[0].innerHTML = 'show the code';
-            }
-        }
-    }
-</script>
+<script src="../assets/js/prism.js"></script>
+<script src="../assets/js/javascript.js"></script>
+<script>let active = 0; </script>
+<script src="../assets/js/links.js"></script>
 
 </html>

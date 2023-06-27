@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::selection {
+    color: #3F51B5;
+    background-color: #00bcd42e;
+}
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    padding: 20px 60px;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav .name {
+    font-weight: bold;
+    cursor: default;
+    user-select: none;
+}
+
+
+nav .links a:hover {
+    color: red;
+}
+
+nav .menu i {
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+nav .menu i:hover {
+    opacity: 0.5;
+}
+.menubar::-webkit-scrollbar {
+    width: 10px;
+  }
+.menubar {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-margin: 0;
+    padding-bottom: 5px;
+    order: 100;
+    position: absolute;
+    width: 25%;
+    background-color: blue;
+    right: -100%;
+    opacity: 0.5;
+    top: 65px;
+    transition: 0.5s;
+}
+
+.right {
+    right: 0;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-color-background {
+    padding: 80px 80px 50px;
+    background-color: #eee;
+}
+
+.second-color-background {
+    padding: 80px 80px 50px;
+    background-color: #ddd;
+}
+
+.answer-information span {
+    font-size: 20px;
+    color: #666;
+}
+
+
+.answer-information span.quation {
+    display: flex;
+}
+
+.answer-information span.quation p {
+    line-height: 1.6;
+    width: 85%;
+}
+
+.answer-information i {
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 20px;
+    color: #222;
+}
+
+.answer-information div {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.answer-information div p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.answer-information div ul {
+    margin-left: 50px;
+}
+
+.answer-information div ul li {
+    margin-top: 10px;
+    list-style: none;
+    position: relative;
+}
+
+.answer-information div ul li::after {
+    content: '';
+    position: absolute;
+    border: #0000ff96 10px solid;
+    top: 5px;
+    left: -30px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+}
+
+.answer-information div ul li i {
+    color: #673ab7bf;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.show-code {
+    text-align: center;
+}
+
+button[type='button'] {
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 180px;
+    height: 55px;
+    cursor: pointer;
+    color: #0000ff3b;
+    text-transform: capitalize;
+    border: 3px solid #0000ff3b;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+button[type='button']:hover {
+    border-color: #0000ff96;
+    color: #0000ff96;
+}
+
+.code {
+    text-align: center;
+}
+
+.code pre {
+    transition: 0.5s;
+    /* width: 800px; */
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0; */
+    padding: 0;
+
+}
+
+.hidden-code {
+    padding: 0;
+    height: 0px;
+}
+
+.display-code {
+    height: 300px;
+
+}
+
+.menubar .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.menubar .links a {
+    display: inline-block;
+    padding-left: 40px;
+    margin-right: 15px;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    transition: 0.5s;
+    user-select: none;
+}
+
+.menubar .links a.active {
+    /* cursor: default; */
+    pointer-events: none;
+    color: #03A9F4;
+    border-bottom-color: #03A9F4;
+}
+
+.menubar .links a:hover {
+    color: #03A9F4;
+    border-bottom-color: #03A9F4;
+}
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+    nav {
+        padding: 20px 30px;
+    }
+    nav .name {
+        font-size: 18px;
+    } 
+    .menubar {
+        width: 40%;
+    }
+    .answer-information i  {
+        font-size: 24px;
+    }
+    .answer-information span.quation {
+        flex-direction: column;
+    }
+    .answer-information span.quation p {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .answer-information div p {
+        font-size: 20px;
+    }
+    .answer-information span {
+        font-size: 18px;
+    }
+
+    .answer-information div {
+        margin-top: 15px;
+        margin-left: 33px;
+    }
+    button[type='button'] { 
+        font-size: 18px;
+        margin-top: 10px;
+        border-radius: 8px;
+        width: 160px;
+        height: 45px;
+    }
+    .first-color-background {
+        padding: 30px 30px 20px;
+    }
+    .second-color-background {
+        padding: 30px 30px 20px;
+    }
+    .code pre  {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 20px;
+    }
+    nav .name {
+        font-size: 16px;
+    } 
+    .menubar {
+        width: 70%;
+    }
+    .answer-information i  {
+        font-size: 22px;
+    }
+    .answer-information span.quation {
+        flex-direction: column;
+    }
+    .answer-information span.quation p {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .answer-information div p {
+        font-size: 18px;
+    }
+    .answer-information span {
+        font-size: 16px;
+    }
+
+    .answer-information div {
+        margin-top: 15px;
+        margin-left: 33px;
+    }
+    button[type='button'] { 
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        width: 140px;
+        height: 45px;
+    }
+    .first-color-background {
+        padding: 30px 30px 20px;
+    }
+    .second-color-background {
+        padding: 30px 30px 20px;
+    }
+    .code pre  {
+        /* margin-left: -33px; */
+        width: 102%;
+    }
+}
